@@ -6,6 +6,19 @@ Person.height = '174';
 Person.gender = '👨';
 Person.age = 16;
 
+// Constructor 👷‍♂️
+function School(name, location) {
+    this.name = name;
+    this.location = location;
+
+    this.whereIsTheSchool = function() {
+        return `Die Schule ist in ${this.location}.`;
+    }
+}
+
+const school = new School('TGM🏢', 'Wien🌏');
+console.log(school.whereIsTheSchool());
+
 // Object literal syntax 🤺
 const teacher = {
     surename: 'Jan',
