@@ -1,10 +1,7 @@
 class Teacher extends Person {
+    // Constructor 👷‍♂️
     constructor(surename, lastname, height, gender, age, subject, department) {
-        super(surename);
-        super(lastname);
-        super(age);
-        super(height);
-        super(gender);
+        super(surename, lastname, height, gender, age);
         this.subject = subject;
         this.department = department;
     }
