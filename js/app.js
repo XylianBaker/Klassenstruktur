@@ -36,7 +36,7 @@ data += JSON.stringify(Student, null, 2);
 data += JSON.stringify(Teacher, null, 2);
 
 // write file to disk
-fs.writeFile('./user.json', data, 'utf8', (err) => {
+fs.writeFile('../json/app.json', data, 'utf8', (err) => {
 
     if (err) {
         console.log(`Error writing file: ${err}`);

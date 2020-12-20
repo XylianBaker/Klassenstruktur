@@ -41,7 +41,7 @@ const fs = require('fs');
 let data = JSON.stringify(p, null, 2);
 
 // write file to disk
-fs.writeFile('./school.json', data, 'utf8', (err) => {
+fs.writeFile('../json/school.json', data, 'utf8', (err) => {
 
     if (err) {
         console.log(`Error writing file: ${err}`);
