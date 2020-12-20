@@ -5,5 +5,4 @@ class Teacher extends Person {
         this.subject = subject;
         this.department = department;
     }
-
 }
