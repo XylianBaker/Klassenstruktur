@@ -1,12 +1,11 @@
-const Person = new Object();
-Person.surename = 'Jan';
-Person.lastname = 'Kammellander';
-Person.height = '174';
-Person.gender = '👨';
-Person.age = 16;
+class Person {
 
-const Student = Object.create(Person);
-const { subjects, department, classyear } = Student;
-
-const Teacher = Object.create(Person);
-const { subjects, educates, workinghours } = Teacher;
+    // Constructor 👷‍♂️
+    constructor(surename, lastname, height, gender, age) {
+        this.surename = surename;
+        this.lastname = lastname;
+        this.height = height;
+        this.gender = gender;
+        this.age = age;
+    }
+}
