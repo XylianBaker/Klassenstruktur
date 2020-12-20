@@ -1,7 +1,19 @@
 {
   "surename": "Jan",
   "lastname": "Kammellander",
-  "height": "173",
+  "height": 173,
   "gender": "👨",
-  "age": "16"
+  "age": 16
+}{
+  "surename": "Dominik",
+  "lastname": "Bosnic",
+  "height": 171,
+  "gender": "👨",
+  "age": 18
+}{
+  "surename": "Monika",
+  "lastname": "Reichard",
+  "height": 160,
+  "gender": "👩",
+  "age": 58
 }
