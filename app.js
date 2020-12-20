@@ -6,22 +6,27 @@ Person.height = '174';
 Person.gender = '👨';
 Person.age = 16;
 
+
 // Student-Object 👩‍🎓👨‍🎓
 const Student = Object.create(Person);
 Student.classyear = 3;
 Student.department = 'HIT💻';
+
 
 // Teacher-Object👩‍🏫👨‍🏫
 const Teacher = Object.create(Person);
 Teacher.subject = 'maths➗';
 Teacher.department = 'HIT💻';
 
+
 // Functions 🦼
 Teacher.attendance = (here) => here == 'ja' ? 'true' : 'false';
 Teacher.workingWeek = (hour) => 40 - hour;
 
+
 console.log(Teacher.attendance('ja'));
 console.log(Teacher.workingWeek(5));
+
 
 const fs = require('fs');
 
@@ -40,3 +45,5 @@ fs.writeFile('./user.json', data, 'utf8', (err) => {
     }
 
 });
+
+// unnecessary
