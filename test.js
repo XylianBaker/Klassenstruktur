@@ -12,16 +12,39 @@ const teacher = {
     lastname: 'Kammellander',
     height: 172,
     gender: '👨',
-    age: '16'
+    age: '16',
+    // Method 🍳 --> ➡ Function uses global 🌆 variables
+    works: () => {
+
+    },
+    // uses local🏡 variables 
+    worktime() {
+
+    },
 };
 Person.subject = 'maths➗';
 
-const classyear = '3BHIT';
-
 // Static Method 🗿 --> best for inheriting an existing Object "Vererbung"
 // Using the Person 🤺 as an Prototyp
-const student = Object.create(Person);
-student.class;
 
+const student = Object.create(Person);
+
+const classyear = '3BHIT';
+student.classyear;
+
+// Destructering 🧨
+const { subjects, department } = student;
+
+// defines the propertyp of an Object📦
+Object.defineProperty(student, 'classyear', {
+    value: '3BHIT🏫',
+});
+
+// defindes getter-Method 🎁
+Object.defineProperty(student, 'subject', {
+    get: () => 'maths➗',
+});
+
+console.log(student.subject);
 // Original Object 🧭
 console.log(Object.getPrototypeOf(student));
