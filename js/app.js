@@ -27,15 +27,15 @@ Teacher.workingWeek = (hour) => 40 - hour;
 console.log(Teacher.attendance('ja'));
 console.log(Teacher.workingWeek(5));
 
-
+// JSON ☕
 const fs = require('fs');
 
-// convert JSON object to a string
+// convert JSON object 📦 to a string 🧵
 let data = JSON.stringify(Person, null, 2);
 data += JSON.stringify(Student, null, 2);
 data += JSON.stringify(Teacher, null, 2);
 
-// write file to disk
+// write file 📁 to disk 💿
 fs.writeFile('../json/app.json', data, 'utf8', (err) => {
 
     if (err) {
@@ -45,5 +45,3 @@ fs.writeFile('../json/app.json', data, 'utf8', (err) => {
     }
 
 });
-
-// unnecessary

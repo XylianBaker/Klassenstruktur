@@ -34,13 +34,13 @@ class Teacher extends Person {
 
 const p = new Person('Jan', 'Kammellander', '173', '👨', '16');
 
-// JSON 
+// JSON ☕
 const fs = require('fs');
 
-// convert JSON object to a string
+// convert JSON object 📦 to a string 🧵
 let data = JSON.stringify(p, null, 2);
 
-// write file to disk
+// write file 📁 to disk 💿
 fs.writeFile('../json/school.json', data, 'utf8', (err) => {
 
     if (err) {
