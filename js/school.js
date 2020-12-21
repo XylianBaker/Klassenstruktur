@@ -8,6 +8,20 @@ class Person {
         this.gender = gender;
         this.age = age;
     }
+
+    setGender(gender) {
+        this.surename = gender;
+    }
+
+    getGender() {
+        return this.gender;
+    }
+
+    toString() {
+        const notation = this.gender == '🤵' ? 'Herr 🤵' : 'Frau 💃';
+        return `Mein Name ist ${notation} ${this.surename} ${this.lastname}.\n
+        Ich bin ${this.height} cm groß 📏 und ${this.age} alt.`;
+    }
 }
 
 class Students extends Person {
@@ -21,6 +35,14 @@ class Students extends Person {
         this.grades = grades;
         this.attendance = attendance;
     }
+
+    toString() {
+        const str = super.toString();
+        const anwesend = this.attendance == 'ja' ? 'Anwesend' : ' nicht Anwesend';
+        return `${str} \n 
+        Ich bin Schüler der Abteilung ${this.classyear}${this.department} und habe die Note 
+        ${this.grades}. \n Ich bin ${anwesend}.`
+    }
 }
 
 class Teacher extends Person {
@@ -33,9 +55,12 @@ class Teacher extends Person {
 }
 
 // Test 🧪
-const p = new Person('Jan', 'Kammellander', 173, '👨', 16);
-const s = new Students('Dominik', 'Bosnic', 171, '👨', 18);
-const t = new Teacher('Monika', 'Reichard', 160, '👩', 58);
+const p = new Person('Jan', 'Kammellander', 173, '🤵', 16);
+const s = new Students('Dominik', 'Bosnic', 171, '🤵', 18, 'HIT🏢', '3B', 1, 'ja');
+const t = new Teacher('Monika', 'Reichard', 160, '💃', 58);
+
+console.log(p.toString());
+console.log(s.toString());
 
 // JSON ☕
 const fs = require('fs');
@@ -53,5 +78,4 @@ fs.writeFile('../json/school.json', data, 'utf8', (err) => {
     } else {
         console.log(`File is written successfully!`);
     }
-
 });

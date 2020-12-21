@@ -2,18 +2,22 @@
   "surename": "Jan",
   "lastname": "Kammellander",
   "height": 173,
-  "gender": "👨",
+  "gender": "🤵",
   "age": 16
 }{
   "surename": "Dominik",
   "lastname": "Bosnic",
   "height": 171,
-  "gender": "👨",
-  "age": 18
+  "gender": "🤵",
+  "age": 18,
+  "department": "HIT🏢",
+  "classyear": "3B",
+  "grades": 1,
+  "attendance": "ja"
 }{
   "surename": "Monika",
   "lastname": "Reichard",
   "height": 160,
-  "gender": "👩",
+  "gender": "💃",
   "age": 58
 }
